@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -8,7 +8,7 @@ let titulo = document.querySelector('h1');
 titulo.innerHTML = 'Jogo do número secreto';
 
 let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'Escolha um número entre 1 e 4';
+paragrafo.innerHTML = 'Escolha um número entre 1 e 100';
 
 //Manipulando tags com parâmetros
 function exibirTextoNaTela(tag, texto) {
@@ -28,7 +28,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 4');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
 }
 //criando a função para o bptão chutar e novo jogo
 
